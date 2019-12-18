@@ -11,7 +11,7 @@ import cofh.core.sided.IRunnableClient;
 import cofh.core.sided.IRunnableServer;
 import cofh.core.util.KeyBindingEmpower;
 import cofh.core.util.KeyBindingMultiMode;
-import cofh.core.util.oredict.OreDictionaryArbiter;
+//import cofh.core.util.oredict.OreDictionaryArbiter;
 import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.eventhandler.Event.Result;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
@@ -97,7 +97,7 @@ public class Proxy {
 	@SubscribeEvent
 	public void onOreRegisterEvent(OreRegisterEvent event) {
 
-		OreDictionaryArbiter.registerOreDictionaryEntry(event.Ore, event.Name);
+//		OreDictionaryArbiter.registerOreDictionaryEntry(event.Ore, event.Name);
 	}
 
 	@SubscribeEvent

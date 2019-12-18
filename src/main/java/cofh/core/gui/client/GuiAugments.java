@@ -27,4 +27,9 @@ public class GuiAugments extends GuiBaseAdv {
 
 	}
 
+	@Override
+	protected void drawGuiContainerBackgroundLayer(float v, int i, int i1) {
+
+	}
+
 }

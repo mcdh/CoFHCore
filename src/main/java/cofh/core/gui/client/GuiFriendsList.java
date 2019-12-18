@@ -140,7 +140,7 @@ public class GuiFriendsList extends GuiBaseAdv {
 	@Override
 	protected void drawGuiContainerBackgroundLayer(float f, int x, int y) {
 
-		super.drawGuiContainerBackgroundLayer(f, x, y);
+//		super.drawGuiContainerBackgroundLayer(f, x, y);
 		mc.renderEngine.bindTexture(TEXTURE);
 
 		tbName.drawTextBox();

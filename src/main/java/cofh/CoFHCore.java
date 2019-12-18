@@ -23,7 +23,7 @@ import cofh.core.util.crafting.RecipeUpgrade;
 import cofh.core.util.crafting.RecipeUpgradeOverride;
 import cofh.core.util.energy.FurnaceFuelHandler;
 import cofh.core.util.fluid.BucketHandler;
-import cofh.core.util.oredict.OreDictionaryArbiter;
+//import cofh.core.util.oredict.OreDictionaryArbiter;
 import cofh.core.world.FeatureParser;
 import cofh.core.world.WorldHandler;
 import cofh.lib.util.helpers.SecurityHelper;
@@ -145,7 +145,7 @@ public class CoFHCore extends BaseMod {
 	@EventHandler
 	public void postInit(FMLPostInitializationEvent event) {
 
-		OreDictionaryArbiter.initialize();
+//		OreDictionaryArbiter.initialize();
 		CoFHEnchantment.postInit();
 
 		proxy.registerKeyBinds();
@@ -178,7 +178,7 @@ public class CoFHCore extends BaseMod {
 	@EventHandler
 	public void serverStarting(FMLServerStartingEvent event) {
 
-		OreDictionaryArbiter.initialize();
+//		OreDictionaryArbiter.initialize();
 		CommandHandler.initCommands(event);
 		server = event.getServer();
 		for (IBakeable i : oven) {

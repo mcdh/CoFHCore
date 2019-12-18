@@ -54,6 +54,11 @@ public class GuiFriendList extends GuiBaseAdv {
 	}
 
 	@Override
+	protected void drawGuiContainerBackgroundLayer(float v, int i, int i1) {
+
+	}
+
+	@Override
 	public void onGuiClosed() {
 
 		Keyboard.enableRepeatEvents(false);

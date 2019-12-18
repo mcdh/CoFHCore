@@ -1,7 +1,7 @@
 package cofh.core.command;
 
 import cofh.core.RegistrySocial;
-import cofh.core.util.oredict.OreDictionaryArbiter;
+//import cofh.core.util.oredict.OreDictionaryArbiter;
 import cofh.lib.util.helpers.ItemHelper;
 import cofh.lib.util.helpers.StringHelper;
 import com.google.common.collect.Multimap;
@@ -34,6 +34,7 @@ import net.minecraft.util.ChatComponentText;
 import net.minecraft.util.ChatComponentTranslation;
 import net.minecraft.util.IChatComponent;
 import net.minecraft.util.StatCollector;
+import net.minecraftforge.oredict.OreDictionary;
 
 public class CommandHand implements ISubCommand {
 
@@ -265,7 +266,8 @@ public class CommandHand implements ISubCommand {
 			@Override
 			public IChatComponent processStack(ItemStack stack) {
 
-				ArrayList<String> ores = OreDictionaryArbiter.getAllOreNames(stack);
+//				ArrayList<String> ores = OreDictionaryArbiter.getAllOreNames(stack);
+				ArrayList<String> ores = new ArrayList<>(OreDictionary.getAllOreNames(stack));
 				int size = ores == null ? 0 : ores.size();
 				String arr = Objects.toString(ores, "[null]");
 				return new ChatComponentText(size + "> " + arr.substring(1, arr.length() - 1));
